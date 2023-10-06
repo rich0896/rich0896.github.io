@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>BEANstop - Home</title>
@@ -25,6 +25,8 @@
 
         <!-- Starting of main body content. -->
         <main>
+            <!-- Adding an on-page link. -->
+            <a href="#totw">Treat of the Week</a>
             <!-- Article of the page, can be standalone. -->
             <article>
                 <h2>Our Story</h2>
@@ -63,15 +65,13 @@
                 </ol>
             </section>
             <!-- Adding section for description list. -->
-            <section>
+            <section id="totw">
                 <h3><u>B A K E s h o p <i>Treat of the Week</i></u></h3>
                 <dl>
                     <dt>Name</dt>
                     <dd>Banana Bread</dd>
-                    <br>
                     <dt>Calories</dt>
                     <dd>250cal</dd>
-                    <br>
                     <dt>Ingredients</dt>
                     <dd>
                         <ul>
@@ -87,7 +87,35 @@
                     </dd>
                 </dl>
                 <!-- Adding an external link. -->
-                <a href="https://allrecipes.com/recipe/20144/banana-banana-bread/" target="_blank">Visit the recipe we <strike>stole</strike> we inspired by in a new tab.</a>
+                <a href="https://allrecipes.com/recipe/20144/banana-banana-bread/" target="_blank">Visit the recipe we <del>stole</del> were inspired by in a new tab.</a>
+            </section>
+            <!-- Adding section for menu table. -->
+            <section>
+                <h3>Menu Specials</h3>
+                <table border="">
+                    <thead>
+                        <tr>
+                            <th colspan="2"><u>Items</u></th>
+                            <th rowspan="2"><u>Price</u></th>
+                        </tr>
+                        <tr>
+                            <th>Name</th>
+                            <th>Calories</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Banana Bread</td>
+                            <td>250cals</td>
+                            <td>&dollar;6</td>
+                        </tr>
+                        <tr>
+                            <td>Oatmeal</td>
+                            <td>110cals</td>
+                            <td>&dollar;8</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
         </main>
 
