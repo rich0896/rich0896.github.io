@@ -1,0 +1,97 @@
+/* 
+This is a CSS comment.
+SHORTCUT FOR ADDING A COMMENT: Command⌘ + /
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+}
+
+h1 {
+    color: cadetblue;
+}
+
+p {
+    background-color: antiquewhite;
+}
+
+/* Selecting multiple elements */
+h1, h2, h3, h4 {
+    text-decoration: underline;
+}
+
+/* Selecting child elements */
+nav ul {
+    list-style: none;
+}
+
+nav ul a {
+    color: darkslategray;
+    text-decoration: none;
+}
+
+/* Selecting element with id value */
+/* As a best practice, try to avoid using ids for styles */
+#totw {
+    background-color: cadetblue;
+}
+
+.blue-link {
+    background-color: darkslategray;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.large-text {
+    font-size: 24px;
+}
+
+.white-text {
+    color: antiquewhite;
+}
+
+/* Combinators */
+/* Direct child selector - will only select the direct shild of the parent */
+article > p {
+    font-size: 24px;
+}
+
+/* Adjacent sibling selector - will select the element that is the very next sibling to the selected element if any exist */
+h3 + ul {
+    border: 1px solid black;
+}
+
+/* Sibling selector */
+h3 ~ p {
+    text-transform: uppercase;
+}
+
+/* Attribue selector */
+[href = "totw"] {
+    font-weight: bold;
+}
+
+[src $= ".jpg"] {
+    border: 8px solid darkslategray;
+}
+
+/* Using pseudo classes */
+/* Styling the navigation */
+nav ul a,
+nav ul a:link,
+nav ul a:visited {
+    background-color: antiquewhite;
+    /* Horizontal, vertical, blur, spread, colour */
+    box-shadow: -2px 2px 4px 2px black;
+}
+
+nav ul .current,
+nav ul a:hover,
+nav ul a:focus {
+    text-decoration: underline;
+}
+
+nav ul a:active {
+    box-shadow: -2px 2px 4px 0 black;
+}
