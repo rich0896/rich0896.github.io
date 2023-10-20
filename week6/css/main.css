@@ -6,6 +6,7 @@ SHORTCUT FOR ADDING A COMMENT: Command⌘ + /
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: darkslategray;
+    /* Adding a background image */
     background-image: url("../images/white_brick_wall.png");
 }
 
@@ -30,12 +31,24 @@ nav ul {
 nav ul a {
     color: darkslategray;
     text-decoration: none;
+    font-size: 1.5rem;
+    /* 1.5rem (root / html font size) = 16px * 1.5 = 24px */
 }
 
 /* Selecting element with id value */
 /* As a best practice, try to avoid using ids for styles */
 #totw {
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
+    /* Colour, image, repeat, position x, position y */
+    background: cadetblue url("../images/bread.jpg") no-repeat center;
+    background-size: cover;
+    font-size: 1.25rem;
+    /* 1.25 * 16px = 20px */
+    padding: 1em;
+    /* 1 * 20px (element font size) = 20px */
+    /* Viewport based units */
+    /* width: 100vw */
+    width: 50%;
 }
 
 .blue-link {
@@ -56,6 +69,10 @@ nav ul a {
 /* Direct child selector - will only select the direct shild of the parent */
 article > p {
     font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: lowercase;
+    text-align: center;
 }
 
 /* Adjacent sibling selector - will select the element that is the very next sibling to the selected element if any exist */
