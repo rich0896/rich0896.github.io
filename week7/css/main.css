@@ -1,0 +1,149 @@
+/* 
+This is a CSS comment.
+SHORTCUT FOR ADDING A COMMENT: Command⌘ + /
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+    /* Adding a background image */
+    background-image: url("../images/white_brick_wall.png");
+}
+
+h1 {
+    color: cadetblue;
+}
+
+p {
+    background-color: antiquewhite;
+}
+
+/* Selecting multiple elements */
+h1, h2, h3, h4 {
+    text-decoration: underline;
+}
+
+/* Selecting child elements */
+nav ul {
+    list-style: none;
+}
+
+nav ul a {
+    color: darkslategray;
+    text-decoration: none;
+    font-size: 1.5rem;
+    /* 1.5rem (root / html font size) = 16px * 1.5 = 24px */
+}
+
+/* Selecting element with id value */
+/* As a best practice, try to avoid using ids for styles */
+#totw {
+    /* background-color: cadetblue; */
+    /* Colour, image, repeat, position x, position y */
+    background: cadetblue url("../images/bread.jpg") no-repeat center;
+    background-size: cover;
+    font-size: 1.25rem;
+    /* 1.25 * 16px = 20px */
+    padding: 1em;
+    /* 1 * 20px (element font size) = 20px */
+    /* Viewport based units */
+    /* width: 100vw */
+    width: 50%;
+}
+
+.blue-link {
+    background-color: darkslategray;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.large-text {
+    font-size: 24px;
+}
+
+.white-text {
+    color: antiquewhite;
+}
+
+/* Combinators */
+/* Direct child selector - will only select the direct shild of the parent */
+article > p {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+/* Adjacent sibling selector - will select the element that is the very next sibling to the selected element if any exist */
+h3 + ul {
+    border: 1px solid black;
+}
+
+/* Sibling selector */
+h3 ~ p {
+    text-transform: uppercase;
+}
+
+/* Attribue selector */
+[href = "totw"] {
+    font-weight: bold;
+}
+
+[src $= ".jpg"] {
+    border: 8px solid darkslategray;
+}
+
+/* Using pseudo classes */
+/* Styling the navigation */
+nav ul a,
+nav ul a:link,
+nav ul a:visited {
+    background-color: antiquewhite;
+    /* Horizontal, vertical, blur, spread, colour */
+    box-shadow: -2px 2px 4px 2px black;
+}
+
+nav ul .current,
+nav ul a:hover,
+nav ul a:focus {
+    text-decoration: underline;
+}
+
+nav ul a:active {
+    box-shadow: -2px 2px 4px 0 black;
+}
+
+/* Position selectors */
+/* First-child and last-child */
+aside ul li:first-child {
+    font-weight: bold;
+}
+
+section ol li:last-child {
+    font-weight: bold;
+}
+
+/* Styling the table */
+table {
+    border-collapse: collapse;
+}
+
+/* Nth-child selector - even/odd */
+tbody tr:nth-child(even) {
+    /* Hex colour value with 6 characters */
+    background-color: #d5836c;
+}
+
+table th:nth-child(n),
+table td:nth-child(n) {
+    border: 1px solid #000;
+}
+
+/* Using formula in nth-child selector */
+table td:nth-child(2n + 1) {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Specificity */
+/* Formula: inline style, id, class, tag/type */

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>BEANstop - Contact Us</title>
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+    <body>
+        <!-- This is the site header. -->
+        <header>
+            <h1>B E A N s t o p</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html" class="current">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Starting of main body content. -->
+        <main>
+            <!-- Adding table for hours of operation. -->
+            <h2>Contact Us</h2>
+            <table>
+                <caption><u>Hours of Operation</u></caption>
+                <thead>
+                    <th>Day</th>
+                    <th>Hours</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Weekdays</td>
+                        <td>6 - 9</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>8 - 11</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>Closed</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- Adding section for contact form. -->
+            <section>
+                <h3>Send us your love:</h3>
+                <!-- Adding form. -->
+                <form action="./thanks.html" method="post">
+                    <div>
+                        <label for="fullname">Name:</label>
+                        <input type="text" name="fullname" id="fullname">
+                    </div>
+                    <div>
+                        <label for="youremail">Email:</label>
+                        <input type="email" name="youremail" id="youremail" placeholder="Algonquin Email" value="@algonquinlive.com" required>
+                    </div>
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                    <div>
+                        <label for="tickets">How many tickets &#40;sold in pairs&#41;:</label>
+                        <input type="number" name="tickets" id="tickets" min="2" max="10" step="2" value="2">
+                    </div>
+                    <div>
+                        <label for="row">Row:</label>
+                        <select name="row" id="row">
+                            <option value="front">Front</option>
+                            <option value="centre" selected>Centre</option>
+                            <option value="back">Back</option>
+                        </select>
+                    </div>
+                    <div>
+                        <h3>Have you visited us previously?</h3>
+
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="beenbefore" id="yes">
+
+                        <label for="no">No</label>
+                        <input type="radio" name="beenbefore" id="no">
+                    </div>
+                    <div>
+                        <h3>Policies</h3>
+
+                        <input type="checkbox" name="policies" id="policies" required>
+                        <label for="policies">I agree to the <a href="idiot" target="_blank">Terms and Conditions</a></label>
+                    </div>
+                    <button type="submit">Send off to the postal birds to be delivered to our warehouse of messages within 6-8 business years.</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- Site footer. -->
+        <footer>
+            &copy; Copyright BEANstop Co., 2023
+        </footer>
+    </body>
+</html>
