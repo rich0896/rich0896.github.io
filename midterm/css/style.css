@@ -152,7 +152,7 @@ form .form-content {
 }
 
 /* Just for funnies makes the "Yes" radio option huge to sway your choice */
-#yes {
+#yes-text {
     font-size: 1.5em;
 }
 
