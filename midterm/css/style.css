@@ -142,8 +142,6 @@ ul {
 /* Border and spacing for the contact form */
 form {
     border: 1px solid black;
-    /* Adds rounded corners to the border. */
-    border-radius: 5px;
     padding: 15px;
 }
 
@@ -170,22 +168,6 @@ form textarea {
 /* Makes the textarea the correct height */
 form textarea {
     height: 5rem;
-    border-radius: 5px;
-}
-
-/* Custom styling for inputs (ensures they're a pleasing size and adds border + rounded corners) */
-#name,
-#email,
-#children {
-    height: 2em;
-    border-radius: 5px;
-    border: 1px solid black;
-}
-
-/* Makes the number input wider for better a e s t h e t i c s */
-#children {
-    width: 3em;
-    padding: 0 5px;
 }
 
 /* Custom submit button formatting and styling */
