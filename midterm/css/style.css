@@ -1,0 +1,219 @@
+/* Import line for the cool EVIL font */
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
+/* Sets the main body background formatting, including colour, font and spacing */
+body {
+    background-color: #77120e;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Sets the formatting for the foreground body content: box colour and size */
+.body {
+    background-color: rgb(208, 133, 133);
+    padding-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Ensures the hero image fits the body box */
+#hero-image {
+    width: 100%;
+}
+
+/* Adds further padding to content within foreground body box */
+.main {
+    padding: 10px 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Makes the nav bar inline, spaced out equally, and centred */
+nav ul li {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    box-sizing: border-box;
+    border-right: 1px solid rgb(46, 46, 46);
+}
+
+/* Erases the right border from the right nav link for styling */
+nav ul li:last-child {
+    border-right: 0;
+}
+
+/* Formats the nav links themselves for page congruency */
+nav a {
+    background-color: rgb(208, 133, 133);
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+    display: block;
+    padding: 10px 0;
+}
+
+/* Adds visual interactivity to the buttons */
+nav a:hover,
+nav a:focus {
+    background-color: rgb(46, 46, 46);
+    color: white;
+}
+
+/* Makes the link for the current page have a shadow */
+.active {
+    text-shadow: 2px 2px 2px rgb(46, 46, 46);
+}
+
+/* Styling for the header text to have it sit on top of the hero image and position and style it correctly */
+h1 {
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    position: absolute;
+    top: 25%;
+    right: 37.5%;
+    cursor: default;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Makes the "EVIL" text have a custom font and colour */
+h1 strong {
+    color: red;
+    font-style: italic;
+    font-family: 'Nosifer', sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+}
+
+/* Positions and sets margins on the in-article image */
+#starfish {
+    width: 250px;
+    height: auto;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+/* Helps the text flow around the image */
+p {
+    margin: auto;
+    letter-spacing: normal;
+}
+
+/* Makes the ul sit on the page correctly to aligh with the example provided for the midterm */
+ul {
+    padding: 0 15px;
+    margin-top: 0;
+}
+
+p,
+ul {
+    font-size: 16px;
+    line-height: normal;
+}
+
+/* Border and spacing for the contact form */
+form {
+    border: 1px solid black;
+    /* Adds rounded corners to the border. */
+    border-radius: 5px;
+    padding: 15px;
+}
+
+/* Spaces out the content within the form */
+form .form-content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Just for funnies makes the "Yes" radio option huge to sway your choice */
+#yes {
+    font-size: 1.5em;
+}
+
+/* More spacing options to ensure form content is accurate to example provided */
+#name,
+#email,
+form textarea {
+    margin-top: 5px;
+    width: 100%;
+    resize: none;
+}
+
+/* Makes the textarea the correct height */
+form textarea {
+    height: 5rem;
+    border-radius: 5px;
+}
+
+/* Custom styling for inputs (ensures they're a pleasing size and adds border + rounded corners) */
+#name,
+#email,
+#children {
+    height: 2em;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+/* Makes the number input wider for better a e s t h e t i c s */
+#children {
+    width: 3em;
+    padding: 0 5px;
+}
+
+/* Custom submit button formatting and styling */
+form button {
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 10px;
+    /* Transitions the change in colors to make it smoother */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover/focus style change for the send button */
+form button:hover,
+form button:focus {
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Makes the dumb text on the unneeded Contact page have the creepy font */
+.contact p {
+    text-align: center;
+    font-family: 'Nosifer', sans-serif;
+    font-size: 30px;
+    padding: 20px;
+}
+
+footer {
+    text-align: right;
+    padding: 30px;
+}
