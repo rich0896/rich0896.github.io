@@ -141,6 +141,7 @@ ul {
 
 /* Border and spacing for the contact form */
 form {
+    display: block;
     border: 1px solid black;
     padding: 15px;
 }
@@ -161,7 +162,7 @@ form .form-content {
 #email,
 form textarea {
     margin-top: 5px;
-    width: 100%;
+    width: 99.25%;
     resize: none;
 }
 
