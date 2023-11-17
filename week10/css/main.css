@@ -1,6 +1,6 @@
-/**********************
-     Custom Styles
-**********************/
+/*********************
+    Custom Styles
+*********************/
 
 /*** Global Styles ***/
 html {
@@ -95,12 +95,33 @@ p {
     background: grey url("../images/smog-mobile.jpg") no-repeat center bottom;
     background-size: cover;
 }
-
 .banner h1 {
     margin: 0;
     padding-top: 250px;
     text-align: center;
     text-transform: uppercase;
+}
+
+/*** Nav Styles ***/
+.nav-list li {
+    border-bottom: 1px solid grey;
+    text-align: center;
+}
+
+/* LoVe HAte - Link, Visited, Hover/Focus, Active */
+.nav-list a,
+.nav-list a:link,
+.nav-list a:visited {
+    display: block;
+    padding: 1em 0;
+    text-decoration: none;
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list a.current {
+    background-color: #00ADD8;
+    color: inherit;
 }
 
 .btn {
@@ -118,6 +139,19 @@ p {
     color: inherit;
 }
 
+/*** Action Section Styles ***/
+.actions-list {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.actions-list li {
+    max-width: 50%;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
 /*** Footer Styles ***/
 .site-footer {
     margin-top: 20px;
@@ -129,9 +163,9 @@ p {
     text-align: right;
 }
 
-/**********************
-     Desktop Styles
-**********************/
+/*********************
+    Desktop Styles
+*********************/
 
 @media screen and (min-width: 600px) {
     html {
@@ -155,6 +189,21 @@ p {
         color: white;
     }
 
+    /*** Nav Section ***/
+    .nav-list {
+        display: flex;
+    }
+
+    .nav-list li {
+        flex: 1;
+        border: none;
+        border-right: 1px solid grey;
+    }
+
+    .nav-list li:last-child {
+        border: none;
+    }
+
     /*** App Section ***/
 
     .app img {
@@ -165,5 +214,15 @@ p {
 
     .app .btn {
         float: right;
+    }
+}
+
+/************************
+    Media Query 800px
+************************/
+
+@media screen and (min-width: 800px) {
+    .actions-list li {
+        max-width: 20%;
     }
 }
