@@ -1,0 +1,45 @@
+/* font-family: 'Gwendolyn', cursive;
+font-family: 'Trirong', serif;
+font-family: 'Work Sans', sans-serif; */
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Gwendolyn', cursive;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Trirong', serif;
+}
+
+.fa-gun {
+    font-size: 2rem;
+    color: silver;
+}
+
+.max-widmar {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main {
+    background-color: antiquewhite;
+}
+
+.head {
+    background-color: blanchedalmond;
+}
+
+.container {
+    background-color: cadetblue;
+}
+
+.map iframe {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+}
