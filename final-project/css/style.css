@@ -181,7 +181,6 @@ nav li:first-child a:active {
     background-image: url("../images/main-banner.jpg");
     background-size: cover;
     background-position: center;
-    
 }
 
 .overlay {
@@ -319,8 +318,8 @@ footer p {
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: 8fr 7.2fr;
         grid-template-areas:
-        "digital digital digital marketing marketing marketing"
-        "video video web web print print"
+            "digital digital digital marketing marketing marketing"
+            "video video web web print print"
         ;
     }
 
@@ -381,10 +380,10 @@ footer p {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 0.5fr 1fr 1fr 1fr;
         grid-template-areas:
-        "header header"
-        "form location"
-        "form location"
-        "hours hours"
+            "header header"
+            "form location"
+            "form location"
+            "hours hours"
         ;
     }
 
