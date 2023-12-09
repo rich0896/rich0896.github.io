@@ -1,5 +1,17 @@
+/*****************************
+* FINAL PROJECT ---- MTM6130 *
+*------> SECTION  020 <------*
+*----------------------------*
+* WRITTEN BY  CAMDEN RICHTER *
+*~~~~~~~~~~~~~{ 041122929 }~~*
+* rich0896@algonquinlive.com *
+*>>>>>>>>>>>> GitHub: @irlac *
+*****************************/
+
 /* Colours: #c78c06, #ffe6ac, #222, white */
 
+/* Sets the fundamental font values; Open Sans font family (from Google Fonts), 16px base size */
+/* Also sets the default box-sizing method to be border-box */
 html {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -10,12 +22,14 @@ body {
     line-height: 1.5;
 }
 
+/* Updates all elements to inherit the box-sizing method defined above */
 *,
 *::after,
 *::before {
     box-sizing: inherit;
 }
 
+/* Makes all images on the page fill 100% of their parent's width */
 img {
     width: 100%;
 }
@@ -26,6 +40,7 @@ a:visited {
     color: inherit;
 }
 
+/* Sets the heading styles after the reset */
 h1,
 h2,
 h3,
@@ -60,17 +75,20 @@ p {
     margin: 1em 0;
 }
 
+/* Common class to size (and position) page elements correctly */
 .max-margin {
     max-width: 1200px;
     margin: 0 auto;
 }
 
+/* Sets these sections to have the indent padding on the sides */
 #our-services,
 #our-team,
 #contact-us {
     padding: 0 15px;
 }
 
+/* Sets the padding around these containers to move text from the edges */
 nav,
 .overlay,
 .about,
@@ -81,38 +99,46 @@ nav,
     padding: 15px;
 }
 
+/* Base rectangular anchor tag button style */
 .btn {
     border-radius: 0;
     padding: 20px;
     width: fit-content;
 }
 
+/* Sets buttons co-tagged "orange" to use the prescribed colours */
 .btn.orange {
     background-color: #c78c06;
     color: #222;
 }
 
+/* Sets buttons co-tagged "black" to use the prescribed colours */
 .btn.black {
     background-color: #222;
     color: white;
 }
 
+/* Sets the style for the "Our Vision" and magnifying glass search buttons */
 .search button,
 .btn.vision-btn {
     background-color: rgba(2, 2, 2, 0.8);
     border: 1px solid #c78c06;
 }
 
+/* Removes underlines from anchor tag buttons */
 .btn a {
     text-decoration: none;
 }
 
+/* Sets the nav and footer to the prescribed colours */
 nav,
 footer {
     background-color: #222;
     color: #c78c06;
 }
 
+/* This nav list has been to the gym, cause it's flexing on the whole page */
+/* Column orientation with content centered */
 nav ul li {
     display: flex;
     flex-direction: column;
@@ -120,27 +146,32 @@ nav ul li {
     justify-content: space-evenly;
 }
 
+/* Undoes the previous changes to the list entry containing the logo */
 nav ul li:first-child {
     text-align: left;
     margin-bottom: 0;
     padding: 0;
 }
 
+/* Shrinks the logo so it isn't ridiculously large */
 nav img {
     width: 75px;
 }
 
+/* Styles the nav links */
 nav li a {
     text-decoration: none;
     width: 100%;
     padding: 10px 0;
 }
 
+/* Undoes the styling for the list line containing the logo so it doesn't have weird interaction properties */
 nav li:first-child a {
     width: fit-content;
     padding: 0;
 }
 
+/* Sets the hover style for the nav links */
 nav .current,
 nav li a:hover,
 nav li a:focus,
@@ -149,23 +180,27 @@ nav li a:active {
     background-color: #c78c06;
 }
 
+/* Takes away the hover stlye for the logo, so there isn't a little line of colour popping up when you hover over the image */
 nav li:first-child a:hover,
 nav li:first-child a:focus,
 nav li:first-child a:active {
     background-color: #222;
 }
 
+/* Lays out the search bar to be side-by-side with the submit button */
 .search form {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
+/* Sets the size of the input box for the search bar */
 .search input {
     width: 100%;
     height: 3em;
 }
 
+/* Sets the size of the submit button and colours it correspondingly */
 .search button {
     width: fit-content;
     height: auto;
@@ -173,21 +208,25 @@ nav li:first-child a:active {
     background-color: #222;
 }
 
+/* Resizes the magnifying glass */
 .fa-magnifying-glass {
     font-size: large;
 }
 
+/* Sets the background image for the masthead and positions it */
 .banner {
     background-image: url("../images/main-banner.jpg");
     background-size: cover;
     background-position: center;
 }
 
+/* Sets the overlay container to a semi-transparent dark grey */
 .overlay {
     background-color: rgba(2, 2, 2, 0.6);
     color: white;
 }
 
+/* Sets the corresponding sections to their cream-like colour */
 #about-us,
 .card,
 .john,
@@ -196,15 +235,18 @@ thead {
     background-color: #ffe6ac;
 }
 
+/* Sets the display to a column flexbox to ensure desired layout */
 .about {
     display: flex;
     flex-direction: column;
 }
 
+/* Adds small gap after each card */
 .card {
     margin-bottom: 15px;
 }
 
+/* Adds background image to "Our Vision", positions it, and sets the text to white */
 #our-vision {
     background-image: url("../images/vision.jpg");
     background-size: cover;
@@ -217,12 +259,14 @@ thead {
     margin-bottom: 15px;
 }
 
+/* Styles the lil bars that span underneath the "CEO" subtitles for the dudes */
 .team hr {
     border: 1.5px solid #c78c06;
     margin-top: 0;
     margin-bottom: 15px;
 }
 
+/* Uses flex to arrange the form labels and inputs */
 .input-block {
     display: flex;
     flex-direction: column;
@@ -233,6 +277,7 @@ thead {
     height: 3em;
 }
 
+/* Styles the "Send" button */
 .button-block button {
     padding: 5px;
     border-radius: 0%;
@@ -251,12 +296,14 @@ table {
     width: 100%;
 }
 
+/* Adds the lines to the hours table */
 table th:nth-child(n),
 table td:nth-child(n) {
     border: 1px solid #000;
     padding: 15px;
 }
 
+/* Makes the map fit the page and sit centered */
 iframe {
     width: 100%;
     margin: 0 auto;
@@ -275,6 +322,7 @@ footer p {
 ***************/
 
 @media screen and (min-width: 760px) {
+    /* Changes flex direction on larger screens */
     nav ul {
         display: flex;
         flex-direction: row;
@@ -289,29 +337,35 @@ footer p {
         padding: 40px 0;
     }
 
+    /* Changes about us section arrangement on larger screen */
     .about {
         display: grid;
         gap: 15px;
         grid-template-columns: 1fr 1fr;
     }
 
+    /* Fixes the margin for the "About Us" header to line up properly on larger screens */
     .about h2 {
         margin: 0;
     }
 
+    /* Removes the margin from these elements in order to balance with the gap created from the grid display */
     .digital,
     .marketing {
         margin: 0;
     }
 
+    /* Resizes the black buttons on largerdisplays */
     .btn.black {
         padding: 30px 60px;
     }
 
+    /* Resizes the text within the now larger black buttons */
     .btn.black a {
         font-size: larger;
     }
 
+    /* Sets grid display for the "Our Services" cards and sets the layout */
     .cards {
         display: grid;
         gap: 15px;
@@ -323,6 +377,7 @@ footer p {
         ;
     }
 
+    /* These all set the grid area definitions to lay them out correctly as per the layout created above */
     .cards .digital {
         grid-area: digital;
     }
@@ -343,37 +398,44 @@ footer p {
         grid-area: print;
     }
 
+    /* Changes the size of the buttons to be larger and better fit the mockup on larger screens */
     .cards .btn {
         width: 100%;
         text-align: center;
         height: 100%;
     }
 
+    /* Same as above, but for the "Our Vision" button */
     .btn.vision-btn {
         padding: 30px 60px;
         font-size: larger;
     }
 
+    /* Lays out the container divs in a column to set up for grid checker */
     .team {
         display: flex;
         flex-direction: column;
     }
 
+    /* Modified checker-like layout for the "Our Team" section on larger screens */
     .john,
     .bob {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* Removes an odd space that is created underneath the images */
     .john-img,
     .bob-img {
         margin-bottom: -5px;
     }
 
+    /* Places the image after the text in the grid layout to create the checker effect */
     .bob-img {
         order: 1;
     }
 
+    /* Grid setup and formatting for the "Contact Us" section */
     .contact {
         display: grid;
         gap: 15px;
@@ -387,6 +449,7 @@ footer p {
         ;
     }
 
+    /* These all set the grid area definitions to lay them out correctly as per the layout created above */
     .contact-header {
         grid-area: header;
     }
